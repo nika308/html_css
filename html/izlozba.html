@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <!--nevidljiv dio stranice-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nika Antolić">
+        <meta name="keywords" content="tablica, izložbeni primjerci, ispis">
+        <link rel="stylesheet" href="../css/nantolic22.css" type="text/css">
+        <link rel="stylesheet" href="../css/nantolic22_responzivan.css" type="text/css">
+        <link rel="stylesheet" href="../css/nantolic22_ispis_tablice.css" type="text/css">
+        <script src="../js/nantolic22.js"></script>
+        <title>Izložbeni primjerci</title>
+    </head>
+
+    <!--vidljiv dio stranice-->
+    <body>
+        <!--zaglavlje-->
+        <header class="zaglavlje">
+            <a href="../index.html"><img src="../resursi/slike/logo_muzeja.png" alt="Logo stranice" width="80" height="80"></a>
+            <h1>Izložbeni primjerci</h1>
+        </header>
+        <!--navigacija-->
+        <div class="okvir_navbar">
+            <nav class="navbar">
+                <a href="../index.html">Početna stranica</a>
+                <a href="rezervacija_karti.html">Karte za muzej</a>
+                <a href="galerija.html">Galerija</a>
+                <a class="aktivno" href="izlozba.html">Izložbeni primjerci</a>
+                <a href="oAutoru.html">O autoru</a>
+                <a href="dokumentacija.html">Dokumentacija</a>
+            </nav>
+        </div>
+
+
+
+         <!--glavno-->
+        <main>
+            <div class="tablica_margine">
+                <table id="tablica">
+                    <caption id="naslov_tablice">Izložbeni primjerci</caption>
+                    <thead>
+                        <tr>
+                            <th>Naziv</th>
+                            <th>Opis</th>
+                            <th>Godina izrade</th>
+                            <th>Kategorija</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Enigma stroj</td>
+                            <td>Šifrirni stroj korišten tijekom Drugog svjetskog rata</td>
+                            <td>1940.</td>
+                            <td>Kriptografski uređaj</td>  
+                            <td>Replika</td>
+                        </tr>
+                        <tr>
+                            <td>Prvi hrvatski robot</td>
+                            <td>Robot kojeg su 1968. vodili po Trgu bana Josipa Jelačića u Zagrebu i tada je pričao sa Zagrepčanima koji su ga čudno gledali</td>
+                            <td>1969.</td>
+                            <td>Robot</td>
+                            <td>Original</td>
+                        </tr>
+                        <tr>
+                            <td>ENIAC</td>
+                            <td>Prvo digitalno računalo opće namjene</td>
+                            <td>1946.</td>
+                            <td rowspan="2">Računalo</td>
+                            <td>Restauriran</td>
+                        </tr>
+                        <tr>
+                            <td>Apple I</td>
+                            <td>Prvo komercijalno uspješno osobno računalo</td>
+                            <td>1976.</td>
+                            <td>Replika</td>
+                        </tr>
+                        <tr>
+                            <td>Motorola DynaTAC 8000X</td>
+                            <td>Prvi komercijalno dostupan mobilni telefon</td>
+                            <td>1983.</td>
+                            <td rowspan="3">Mobilni telefon</td>
+                            <td rowspan="3">Original</td>
+                        </tr>
+                        <tr>
+                            <td>Nokia 3310</td>
+                            <td>Kultni mobilni telefon poznat po svojoj trajnosti i jednostavnosti</td>
+                            <td>2000.</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone (prva generacija)</td>
+                            <td>Revolucionarni mobilni telefon koji je promijenio industriju</td>
+                            <td>2007.</td>
+                        </tr>
+                        <tr>
+                            <td>Parna lokomotiva</td>
+                            <td>Predstavlja preteču modernih lokomotiva</td>
+                            <td>1804.</td>
+                            <td>Lokomotiva</td>
+                            <td rowspan="3">Replika</td>
+                        </tr>
+                        <tr>
+                            <td>Ford Model T</td>
+                            <td>Prvi masovno proizvedeni automobil</td>
+                            <td>1908.</td>
+                            <td rowspan="2">Automobil</td>
+                        </tr>
+                        <tr>
+                            <td>Tesla Model S</td>
+                            <td>Električni automobil koji je popularizirao koncept luksuznih električnih vozila</td>
+                            <td>2012.</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Tablica se redovito ažurira s izložbenim primjercima!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+        <!--podnozje dio stranice-->
+        <footer class="podnozje">
+            <span>&copy; Nika Antolić, 2024.</span>
+            <a target="_blank" href="https://creativecommons.org/licenses/list.en#croatia-25">
+                <img src="../resursi/slike/cc_logo.png" alt="CC logo" width="20" height="20">
+            </a>
+            <a target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2024%2Fzadaca_01%2Fnantolic22%2Fhtml%2Fizlozba.html">
+                <img src="../resursi/slike/HTML5.png" alt="HTML logo" width="20" height="20">
+            </a>
+        </footer>
+    </body>
+</html>

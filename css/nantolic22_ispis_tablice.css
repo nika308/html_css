@@ -1,0 +1,16 @@
+@media only print{
+    header, nav, footer, caption{
+        display: none;
+        visibility: hidden;
+    }
+    table, thead, th, td, tr{
+        visibility: visible;
+        border: 1px solid black;
+    }
+    #tablica{
+        font-size: 15px;
+        width: auto;
+        padding: 0;
+        margin: 0;
+     }
+}

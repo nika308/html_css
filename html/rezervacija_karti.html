@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <!--nevidljiv dio stranice-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nika Antolić">
+        <meta name="keywords" content="obrazac, rezervacija karti, slanje podataka">
+        <link rel="stylesheet" href="../css/nantolic22.css" type="text/css">
+        <link rel="stylesheet" href="../css/nantolic22_responzivan.css" type="text/css">
+        <script src="../js/nantolic22.js"></script>
+        <title>Karte za muzej</title>
+    </head>
+
+    <!--vidljiv dio stranice-->
+    <body>
+        <!--zaglavlje-->
+        <header class="zaglavlje">
+            <a href="../index.html"><img src="../resursi/slike/logo_muzeja.png" alt="Logo stranice" width="80" height="80"></a>
+            <h1>Karte za muzej</h1>
+        </header>
+        <!--navigacija-->
+        <div class="okvir_navbar">
+            <nav class="navbar">
+                <a href="../index.html">Početna stranica</a>
+                <a class="aktivno" href="rezervacija_karti.html">Karte za muzej</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="izlozba.html">Izložbeni primjerci</a>
+                <a href="oAutoru.html">O autoru</a>
+                <a href="dokumentacija.html">Dokumentacija</a>
+            </nav>
+        </div>
+
+
+
+         <!--glavno-->
+        <main id="obrazac">
+            <h2>Rezervacija karata za muzej</h2>
+            <form action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="post" target="_blank" class="okvir_obrazac">
+                <fieldset>
+                    <legend>Informacije o kartama</legend>
+                    <label for="regularna">Vrsta karte:</label><br>
+                    <input type="radio" id="regularna" name="vrsta_karte" value="regularna" checked> <!--restrikcija - checked-->
+                        <label for="regularna">Redovna karta</label>
+                        <br>
+                    <input type="radio" name="vrsta_karte" id="studentska" value="studentska">
+                        <label for="studentska">Studentska karta</label>
+                        <br>
+
+                    <input type="radio" name="vrsta_karte" id="umirovljenici" value="umirovljenici">
+                        <label for="umirovljenici">Karta za umirovljenike</label>
+                        <br>
+                    <input type="radio" name="vrsta_karte" id="mjesecna" value="mjesecna">
+                        <label for="mjesecna">Mjesečna karta</label>
+                        <br>
+
+                    <label for="datum">Datum:</label>
+                        <input type="date" id="datum" name="datum"><br>
+
+                    <label for="broj_karti">Broj karti*:</label>
+                        <input type="number" id="broj_karti" name="broj_karti" min="1" max="10"> <!--restrikcija - min i max-->
+                        *minimalno 1 karta, a maksimalno 10 <br>
+
+                    <label for="dodatne_opcije">Dodatne opcije:</label>
+                        <select name="dodatne_opcije" id="dodatne_opcije">
+                            <optgroup label="Obilazak muzeja">
+                                <option value="voditelj">Vodič</option>
+                                <option value="audio">Audio vodič</option>
+                                <option value="samostalno">Samostalni obilazak</option>
+                            </optgroup>
+                            <optgroup label="Posebni događaji">
+                                <option value="izlozba">Posebna izložba</option>
+                                <option value="radionica">Radionica</option>
+                                <option value="predavanje">Predavanje</option>
+                            </optgroup>
+                        </select><br>
+                </fieldset>
+               
+                <fieldset>
+                    <legend>Osobni podaci</legend>
+                    <label for="ime_prezime">Ime i prezime posjetitelja:</label>
+                        <input type="text" id="ime_prezime" name="ime_prezime" minlength="2" maxlength="50">
+                        <br> <!--restrikcija - minlength, maxength-->
+    
+                    <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="duro.dakovic@gmail.com">
+                        <br> <!--restrikcija - placeholder, required-->
+                    <label for="telefon">Broj mobitela/telefona</label>
+                        <input type="tel" id="telefon" name="telefon" required>
+                        <br>
+                    <label for="napomene">Napomene:</label>
+                        <textarea name="napomene" id="napomene" rows="5" maxlength="100"></textarea>
+                        <br>
+                </fieldset>
+
+
+                    <input type="submit" value="Pošalji">
+                    <input type="reset" value="Osvježi obrazac">
+              </form>
+        </main>
+        <footer class="podnozje">
+            <span>&copy; Nika Antolić, 2024.</span>
+            <a target="_blank" href="https://creativecommons.org/licenses/list.en#croatia-25">
+                <img src="../resursi/slike/cc_logo.png" alt="CC logo" width="20" height="20">
+            </a>
+            <a target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2024%2Fzadaca_01%2Fnantolic22%2Fhtml%2Frezervacija_karti.html">
+                <img src="../resursi/slike/HTML5.png" alt="HTML logo" width="20" height="20">
+            </a>
+        </footer>
+    </body>
+</html>
